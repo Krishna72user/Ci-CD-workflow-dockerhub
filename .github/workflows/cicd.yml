@@ -49,4 +49,4 @@ jobs:
           tags: ${{ secrets.DOCKER_USERNAME }}/cicd-dockerhub:latest
       - name: Trigger Render deployment
         run: |
-          curl -X POST "${{ secrets.RENDER_DEPLOY_HOOK }}"
+          curl -X POST "${{ secrets.CI_CD_DEPLOY_HOOK }}"
